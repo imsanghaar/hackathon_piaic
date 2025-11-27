@@ -1,1 +1,0 @@
-"use strict";(globalThis.webpackChunkmy_book=globalThis.webpackChunkmy_book||[]).push([[9734],{3177:o=>{o.exports=JSON.parse('{"metadata":{"permalink":"/hackathon_piaic/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
