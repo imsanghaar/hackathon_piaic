@@ -4,7 +4,7 @@ import Link from '@docusaurus/Link';
 import styles from './styles.module.css';
 
 // Book cover image from static folder
-const HeroImageUrl = '/img/book-cover-page.png';
+const HeroImageUrl = '/img/hero-image.jpeg';
 
 // Tag icons
 const OpenSourceIcon = '📖';
@@ -47,8 +47,8 @@ export default function Hero(): React.ReactElement {
             <Link to="/docs/intro" className={styles.buttonPrimary}>
               Start Reading →
             </Link>
-            <Link to="https://www.panaversity.org/" className={styles.buttonSecondary}>
-              Explore Panaversity
+            <Link to="https://sanghaar.vercel.app/" className={styles.buttonSecondary}>
+              About Author
             </Link>
           </div>
         </div>

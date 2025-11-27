@@ -15,15 +15,14 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://sanghaar.vercel.app', // Vercel deployment URL
   // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/', // Root path for Vercel deployment
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'imsanghaar', // Usually your GitHub org/user name.
-  projectName: 'piaic_hackathon_ai', // Usually your repo name.
+  // organizationName: 'imsanghaar', // Usually your GitHub org/user name.
+  // projectName: 'hackathon_piaic', // Usually your repo name.
 
   onBrokenLinks: 'warn',
 
@@ -80,7 +79,7 @@ const config: Config = {
           label: 'Book',
         },
         {
-          href: 'https://github.com/panaversity/ai-native-software-development',
+          href: 'https://github.com/imsanghaar',
           label: 'GitHub',
           position: 'right',
         },
@@ -97,12 +96,12 @@ const config: Config = {
               to: '/docs/intro', // Assuming this links to the book intro
             },
             {
-              label: 'Full Curriculum',
-              href: 'https://www.panaversity.org/curriculum', // Placeholder
+              label: 'My Work',
+              href: 'https://sanghaar.vercel.app/', // Author's portfolio
             },
             {
-              label: 'Learning Path',
-              href: 'https://www.panaversity.org/learning-path', // Placeholder
+              label: 'Contact Me',
+              href: 'https://sanghaar.vercel.app/', // Author's portfolio
             },
           ],
         },
@@ -111,19 +110,19 @@ const config: Config = {
           items: [
             {
               label: 'YouTube',
-              href: 'https://www.youtube.com/@panaversity', // Placeholder
+              href: 'https://www.youtube.com/@imsanghaar', // Author's YouTube channel
             },
             {
               label: 'LinkedIn',
-              href: 'https://www.linkedin.com/company/panaversity/', // Placeholder
+              href: 'https://www.linkedin.com/in/imsanghaar/', // Author's LinkedIn
             },
             {
               label: 'Instagram',
-              href: 'https://www.instagram.com/piaic/', // Placeholder
+              href: 'https://www.instagram.com/imsanghaar/', // Author's Instagram
             },
             {
               label: 'Facebook',
-              href: 'https://www.facebook.com/Panaversity', // Placeholder
+              href: 'https://www.facebook.com/imsanghaar', // Author's Facebook
             },
           ],
         },
@@ -131,16 +130,12 @@ const config: Config = {
           title: 'RESOURCES',
           items: [
             {
-              label: 'GitHub Repository',
-              href: 'https://github.com/panaversity/', // Placeholder
+              label: 'GitHub Profile',
+              href: 'https://github.com/imsanghaar', // Updated to author's profile
             },
             {
-              label: 'AI Native Specification',
-              to: '/docs/specs', // Placeholder
-            },
-            {
-              label: 'Example Projects',
-              href: 'https://github.com/panaversity/projects', // Placeholder
+              label: 'Projects',
+              href: 'https://github.com/imsanghaar?tab=repositories', // Updated to author's repositories
             },
           ],
         },
@@ -148,12 +143,8 @@ const config: Config = {
           title: 'ABOUT',
           items: [
             {
-              label: 'Panaversity',
-              href: 'https://www.panaversity.org/', // Placeholder
-            },
-            {
-              label: 'Our Mission',
-              to: '/about', // Placeholder
+              label: 'About Author',
+              href: 'https://sanghaar.vercel.app/', // Author's portfolio
             },
           ],
         },
