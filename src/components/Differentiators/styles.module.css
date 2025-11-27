@@ -1,0 +1,85 @@
+.differentiatorsSection {
+  padding: 4rem 2rem;
+  background-color: var(--ifm-background-color);
+  text-align: center;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: var(--ifm-color-primary-darkest);
+}
+
+.sectionSubtitle {
+  font-size: 1.2rem;
+  color: var(--ifm-color-emphasis-700);
+  max-width: 700px;
+  margin: 0 auto 3rem auto;
+}
+
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  position: relative;
+  padding: 2rem;
+  border-radius: 12px;
+  background-color: var(--ifm-card-background-color);
+  border: 1px solid var(--ifm-color-emphasis-300);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  text-align: left;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distribute content evenly */
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  border-color: var(--ifm-color-primary); /* Highlight on hover */
+}
+
+.popularBanner {
+  position: absolute;
+  top: -1px;
+  right: 1rem;
+  padding: 0.3rem 0.8rem;
+  border-radius: 0 0 8px 8px;
+  background-color: var(--ifm-color-warning); /* Or a specific highlight color */
+  color: black;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.cardIcon {
+  font-size: 2.5rem; /* Placeholder for icon */
+  margin-bottom: 1rem;
+  color: var(--ifm-color-primary);
+}
+
+.cardTitle {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: var(--ifm-color-emphasis-900);
+}
+
+.cardDescription {
+  font-size: 0.95rem;
+  color: var(--ifm-font-color-secondary);
+}
+
+/* Ensure the cards are responsive */
+@media (max-width: 768px) {
+  .cardGrid {
+    grid-template-columns: 1fr;
+  }
+}

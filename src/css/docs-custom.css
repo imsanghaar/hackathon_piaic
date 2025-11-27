@@ -1,0 +1,373 @@
+/* ==========================================
+   DOCS PAGE CUSTOM STYLING & ANIMATIONS
+   ========================================== */
+
+/* Smooth page transitions */
+article {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Enhanced headings with gradient effects */
+.markdown h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: slideInLeft 0.8s ease-out;
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.markdown h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 2.5rem;
+  margin-bottom: 1.2rem;
+  color: var(--ifm-color-primary);
+  border-bottom: 2px solid var(--ifm-color-primary);
+  padding-bottom: 0.5rem;
+  animation: slideInLeft 0.8s ease-out 0.1s both;
+}
+
+.markdown h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--ifm-color-primary-dark);
+  position: relative;
+  padding-left: 1rem;
+  animation: slideInLeft 0.8s ease-out 0.2s both;
+}
+
+.markdown h3::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 70%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 2px;
+}
+
+/* Enhanced paragraphs */
+.markdown p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  animation: fadeIn 0.8s ease-out 0.3s both;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Styled lists with custom bullets */
+.markdown ul {
+  list-style: none;
+  padding-left: 0;
+  animation: fadeIn 0.8s ease-out 0.4s both;
+}
+
+.markdown ul li {
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
+
+.markdown ul li::before {
+  content: '▸';
+  position: absolute;
+  left: 0.5rem;
+  color: var(--ifm-color-primary);
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Nested lists */
+.markdown ul ul {
+  margin-top: 0.5rem;
+  margin-left: 1rem;
+}
+
+.markdown ul ul li::before {
+  content: '•';
+  font-size: 1rem;
+}
+
+/* Code blocks with enhanced styling */
+.markdown pre {
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  margin: 1.5rem 0;
+  animation: scaleIn 0.6s ease-out 0.5s both;
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.markdown code {
+  background-color: rgba(102, 126, 234, 0.1);
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-size: 0.95em;
+  font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+}
+
+/* Inline code in dark mode */
+[data-theme='dark'] .markdown code {
+  background-color: rgba(102, 126, 234, 0.2);
+  color: #8da6ee;
+}
+
+/* Blockquotes with special styling */
+.markdown blockquote {
+  border-left: 4px solid var(--ifm-color-primary);
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
+  background: rgba(102, 126, 234, 0.05);
+  border-radius: 0 8px 8px 0;
+  font-style: italic;
+  animation: slideInRight 0.8s ease-out 0.4s both;
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+[data-theme='dark'] .markdown blockquote {
+  background: rgba(102, 126, 234, 0.1);
+}
+
+/* Tables with enhanced styling */
+.markdown table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  animation: fadeIn 0.8s ease-out 0.5s both;
+}
+
+.markdown thead {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.markdown th {
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+}
+
+.markdown td {
+  padding: 0.9rem 1rem;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.markdown tbody tr:hover {
+  background-color: rgba(102, 126, 234, 0.05);
+  transition: background-color 0.3s ease;
+}
+
+/* Admonitions / Callouts */
+.admonition {
+  margin: 1.5rem 0;
+  border-radius: 8px;
+  animation: slideInUp 0.6s ease-out 0.4s both;
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Links with hover effects */
+.markdown a {
+  color: var(--ifm-color-primary);
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.markdown a:hover {
+  color: var(--ifm-color-primary-dark);
+  border-bottom-color: var(--ifm-color-primary);
+}
+
+/* Images with zoom effect */
+.markdown img {
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeIn 0.8s ease-out 0.6s both;
+}
+
+.markdown img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Sidebar enhancements */
+.theme-doc-sidebar-container {
+  animation: slideInLeft 0.6s ease-out;
+}
+
+.menu__link {
+  transition: all 0.3s ease;
+  border-radius: 6px;
+  margin: 0.2rem 0;
+}
+
+.menu__link:hover {
+  background: linear-gradient(90deg, rgba(102, 126, 234, 0.1) 0%, transparent 100%);
+  padding-left: 1.5rem;
+}
+
+.menu__link--active {
+  background: linear-gradient(90deg, rgba(102, 126, 234, 0.15) 0%, transparent 100%);
+  border-left: 3px solid var(--ifm-color-primary);
+  font-weight: 600;
+}
+
+/* Pagination navigation */
+.pagination-nav__link {
+  border: 2px solid var(--ifm-color-emphasis-300);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.pagination-nav__link:hover {
+  border-color: var(--ifm-color-primary);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.2);
+}
+
+/* Table of Contents (TOC) */
+.table-of-contents {
+  animation: fadeIn 0.8s ease-out 0.5s both;
+}
+
+.table-of-contents__link {
+  transition: all 0.3s ease;
+  border-left: 2px solid transparent;
+  padding-left: 0.8rem;
+}
+
+.table-of-contents__link:hover {
+  border-left-color: var(--ifm-color-primary);
+  color: var(--ifm-color-primary);
+}
+
+.table-of-contents__link--active {
+  border-left-color: var(--ifm-color-primary);
+  color: var(--ifm-color-primary);
+  font-weight: 600;
+}
+
+/* Reading progress indicator */
+.theme-doc-markdown {
+  position: relative;
+}
+
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+/* Enhanced focus states for accessibility */
+.markdown a:focus,
+.menu__link:focus,
+.pagination-nav__link:focus {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Print styles */
+@media print {
+  .theme-doc-sidebar-container,
+  .pagination-nav,
+  .theme-doc-footer,
+  .navbar {
+    display: none;
+  }
+  
+  .markdown {
+    max-width: 100%;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 996px) {
+  .markdown h1 {
+    font-size: 2rem;
+  }
+  
+  .markdown h2 {
+    font-size: 1.6rem;
+  }
+  
+  .markdown h3 {
+    font-size: 1.3rem;
+  }
+  
+  .markdown p {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,123 @@
+.comparisonSection {
+  padding: 4rem 2rem;
+  background-color: var(--ifm-background-color);
+  text-align: center;
+}
+
+.mainTitle {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: var(--ifm-color-primary-darkest);
+}
+
+.mainSubtitle {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: var(--ifm-color-emphasis-900);
+}
+
+.sectionDescription {
+  font-size: 1.2rem;
+  color: var(--ifm-color-emphasis-700);
+  max-width: 800px;
+  margin: 0 auto 3rem auto;
+}
+
+.comparisonContainer {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto 3rem auto;
+}
+
+.column {
+  position: relative;
+  flex: 1;
+  min-width: 300px;
+  max-width: 450px;
+  padding: 2rem;
+  border-radius: 12px;
+  background-color: var(--ifm-card-background-color);
+  border: 1px solid var(--ifm-color-emphasis-300);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  text-align: left;
+}
+
+.recommendedBanner {
+  position: absolute;
+  top: -1px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.3rem 1rem;
+  border-radius: 0 0 8px 8px;
+  background-color: var(--ifm-color-info); /* Blue for recommended */
+  color: white;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.columnTitle {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: var(--ifm-color-primary-dark);
+}
+
+.columnList {
+  list-style: none;
+  padding: 0;
+}
+
+.columnList li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 0.8rem;
+  font-size: 0.95rem;
+  color: var(--ifm-font-color-secondary);
+}
+
+.columnList li span {
+  margin-right: 0.5rem;
+  color: var(--ifm-color-primary); /* Checkmark color */
+  font-weight: bold;
+}
+
+.ctaContainer {
+  margin-top: 3rem;
+}
+
+.ctaText {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: var(--ifm-color-emphasis-900);
+}
+
+.ctaButton {
+  padding: 0.8rem 2rem;
+  border-radius: 8px;
+  background-color: var(--ifm-color-primary);
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.ctaButton:hover {
+  transform: translateY(-2px);
+  background-color: var(--ifm-color-primary-dark);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .comparisonContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
