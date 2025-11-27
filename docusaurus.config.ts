@@ -14,16 +14,20 @@ const config: Config = {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
   },
 
+  // Add trailing slash config for better GitHub Pages compatibility
+  trailingSlash: true,
+
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://imsanghaar.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/hackathon_piaic/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'imsanghaar', // Usually your GitHub org/user name.
-  projectName: 'piaic_hackathon_ai', // Usually your repo name.
+  projectName: 'hackathon_piaic', // Usually your repo name.
+  deploymentBranch: 'gh-pages', // Branch to deploy to
 
   onBrokenLinks: 'warn',
 
@@ -44,7 +48,8 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/imsanghaar/piaic_hackathon_ai/edit/main/',
+          // routeBasePath: '/', // Serve docs at the root route - commented out to use default /docs route
         },
         blog: {
           showReadingTime: true,
@@ -94,7 +99,7 @@ const config: Config = {
           items: [
             {
               label: 'Start Your Journey',
-              to: '/docs/intro', // Assuming this links to the book intro
+              to: '/docs/intro', // Link to the intro page in docs
             },
             {
               label: 'Full Curriculum',
@@ -132,15 +137,11 @@ const config: Config = {
           items: [
             {
               label: 'GitHub Repository',
-              href: 'https://github.com/panaversity/', // Placeholder
-            },
-            {
-              label: 'AI Native Specification',
-              to: '/docs/specs', // Placeholder
+              href: 'https://github.com/imsanghaar/piaic_hackathon_ai', // Updated to your repo
             },
             {
               label: 'Example Projects',
-              href: 'https://github.com/panaversity/projects', // Placeholder
+              href: 'https://github.com/imsanghaar/piaic_hackathon_ai', // Updated to your repo
             },
           ],
         },
@@ -149,11 +150,7 @@ const config: Config = {
           items: [
             {
               label: 'Panaversity',
-              href: 'https://www.panaversity.org/', // Placeholder
-            },
-            {
-              label: 'Our Mission',
-              to: '/about', // Placeholder
+              href: 'https://www.panaversity.org/', // Original link
             },
           ],
         },
