@@ -2,6 +2,49 @@ import React from 'react';
 import clsx from 'clsx';
 import styles from './styles.module.css';
 
+const modules = [
+    {
+        icon: '🤖',
+        title: 'Module 1: The Robotic Nervous System (ROS 2)',
+        focus: 'Middleware for robot control',
+        topics: [
+            'ROS 2 Nodes, Topics, and Services',
+            'Bridging Python Agents to ROS controllers using rclpy',
+            'Understanding URDF (Unified Robot Description Format) for humanoids',
+        ],
+    },
+    {
+        icon: '🌐',
+        title: 'Module 2: The Digital Twin (Gazebo & Unity)',
+        focus: 'Physics simulation and environment building',
+        topics: [
+            'Simulating physics, gravity, and collisions in Gazebo',
+            'High-fidelity rendering and human-robot interaction in Unity',
+            'Simulating sensors: LiDAR, Depth Cameras, and IMUs',
+        ],
+    },
+    {
+        icon: '🧠',
+        title: 'Module 3: The AI-Robot Brain (NVIDIA Isaac™)',
+        focus: 'Advanced perception and training',
+        topics: [
+            'NVIDIA Isaac Sim: Photorealistic simulation and synthetic data generation',
+            'Isaac ROS: Hardware-accelerated VSLAM (Visual SLAM) and navigation',
+            'Nav2: Path planning for bipedal humanoid movement',
+        ],
+    },
+    {
+        icon: '🗣️',
+        title: 'Module 4: Vision-Language-Action (VLA)',
+        focus: 'The convergence of LLMs and Robotics',
+        topics: [
+            'Voice-to-Action: Using OpenAI Whisper for voice commands',
+            'Cognitive Planning: Using LLMs to translate natural language into ROS 2 actions',
+            'Capstone Project: The Autonomous Humanoid with voice command, path planning, and object manipulation',
+        ],
+    },
+];
+
 export default function CourseDetails() {
     return (
         <section className={clsx(styles.section, styles.sectionDark)}>
@@ -19,46 +62,23 @@ export default function CourseDetails() {
                     </p>
                 </div>
 
-                <div className={styles.cardGrid}>
-                    <div className={styles.card}>
-                        <h3 className={styles.cardTitle}>Module 1: The Robotic Nervous System (ROS 2)</h3>
-                        <ul className={styles.list}>
-                            <li className={styles.listItem}><strong>Focus:</strong> Middleware for robot control.</li>
-                            <li className={styles.listItem}>ROS 2 Nodes, Topics, and Services.</li>
-                            <li className={styles.listItem}>Bridging Python Agents to ROS controllers using rclpy.</li>
-                            <li className={styles.listItem}>Understanding URDF (Unified Robot Description Format) for humanoids.</li>
-                        </ul>
-                    </div>
-
-                    <div className={styles.card}>
-                        <h3 className={styles.cardTitle}>Module 2: The Digital Twin (Gazebo & Unity)</h3>
-                        <ul className={styles.list}>
-                            <li className={styles.listItem}><strong>Focus:</strong> Physics simulation and environment building.</li>
-                            <li className={styles.listItem}>Simulating physics, gravity, and collisions in Gazebo.</li>
-                            <li className={styles.listItem}>High-fidelity rendering and human-robot interaction in Unity.</li>
-                            <li className={styles.listItem}>Simulating sensors: LiDAR, Depth Cameras, and IMUs.</li>
-                        </ul>
-                    </div>
-
-                    <div className={styles.card}>
-                        <h3 className={styles.cardTitle}>Module 3: The AI-Robot Brain (NVIDIA Isaac™)</h3>
-                        <ul className={styles.list}>
-                            <li className={styles.listItem}><strong>Focus:</strong> Advanced perception and training.</li>
-                            <li className={styles.listItem}>NVIDIA Isaac Sim: Photorealistic simulation and synthetic data generation.</li>
-                            <li className={styles.listItem}>Isaac ROS: Hardware-accelerated VSLAM (Visual SLAM) and navigation.</li>
-                            <li className={styles.listItem}>Nav2: Path planning for bipedal humanoid movement.</li>
-                        </ul>
-                    </div>
-
-                    <div className={styles.card}>
-                        <h3 className={styles.cardTitle}>Module 4: Vision-Language-Action (VLA)</h3>
-                        <ul className={styles.list}>
-                            <li className={styles.listItem}><strong>Focus:</strong> The convergence of LLMs and Robotics.</li>
-                            <li className={styles.listItem}>Voice-to-Action: Using OpenAI Whisper for voice commands.</li>
-                            <li className={styles.listItem}>Cognitive Planning: Using LLMs to translate natural language ("Clean the room") into a sequence of ROS 2 actions.</li>
-                            <li className={styles.listItem}>Capstone Project: The Autonomous Humanoid. A final project where a simulated robot receives a voice command, plans a path, navigates obstacles, identifies an object using computer vision, and manipulates it.</li>
-                        </ul>
-                    </div>
+                <div className={styles.moduleGrid}>
+                    {modules.map((module, index) => (
+                        <div key={index} className={styles.moduleCard}>
+                            <div className={styles.moduleIcon}>{module.icon}</div>
+                            <h3 className={styles.moduleTitle}>{module.title}</h3>
+                            <p className={styles.moduleFocus}>
+                                <strong>Focus:</strong> {module.focus}
+                            </p>
+                            <ul className={styles.moduleList}>
+                                {module.topics.map((topic, topicIndex) => (
+                                    <li key={topicIndex} className={styles.moduleListItem}>
+                                        {topic}
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    ))}
                 </div>
             </div>
         </section>

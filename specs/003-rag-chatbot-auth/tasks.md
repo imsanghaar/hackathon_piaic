@@ -21,11 +21,11 @@
 
 **Purpose**: Project initialization and basic structure
 
-- [ ] T001 Create `backend/` directory and initialize Python project (virtual env, `requirements.txt`)
-- [ ] T002 Create `frontend/` directory (Docusaurus root) and install Node.js dependencies
-- [ ] T003 [P] Create `.env` template files for backend and frontend configuration (`backend/.env.example`, `frontend/.env.example`)
-- [ ] T004 Create `backend/requirements.txt` with initial dependencies (FastAPI, Uvicorn, Psycopg2, python-dotenv, qdrant-client, openai)
-- [ ] T005 [P] Configure backend linting and formatting tools (`backend/pyproject.toml` or similar)
+- [X] T001 Create `backend/` directory and initialize Python project (virtual env, `requirements.txt`)
+- [X] T002 Create `frontend/` directory (Docusaurus root) and install Node.js dependencies
+- [X] T003 [P] Create `.env` template files for backend and frontend configuration (`backend/.env.example`, `frontend/.env.example`)
+- [X] T004 Create `backend/requirements.txt` with initial dependencies (FastAPI, Uvicorn, Psycopg2, python-dotenv, qdrant-client, openai)
+- [X] T005 [P] Configure backend linting and formatting tools (`backend/pyproject.toml` or similar)
 - [ ] T006 [P] Configure frontend linting and formatting tools (`frontend/package.json` or similar)
 
 ---
