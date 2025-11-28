@@ -74,6 +74,23 @@
   text-transform: uppercase;
 }
 
+.seriesNameBordered {
+  display: inline-flex; /* Use inline-flex to make border wrap content */
+  align-items: center;
+  gap: 0.5rem; /* Space between icon and text if an icon were present */
+  padding: 0.6rem 1.2rem;
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Light border */
+  border-radius: 25px; /* Rounded corners */
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #a0a0b0; /* Same color as .seriesName */
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background: rgba(255, 255, 255, 0.05); /* Slightly translucent background */
+  backdrop-filter: blur(10px); /* Frosted glass effect */
+  transition: all 0.3s ease; /* Smooth transitions */
+}
+
 .heroTitle {
   font-size: 3.5rem;
   font-weight: 800;
