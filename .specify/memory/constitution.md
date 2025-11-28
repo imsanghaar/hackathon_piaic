@@ -1,49 +1,55 @@
-<!--
-SYNC IMPACT REPORT
-- Version Change: 0.0.0 -> 1.0.0
-- Rationale: Initial constitution established from project specification.
-- Modified Principles:
-  - Principle I: Created "Spec-Driven Content Creation"
-  - Principle II: Created "Pedagogical Content Focus"
-  - Principle III: Created "Secure, Ethical, and Responsible AI"
-  - Principle IV: Created "Modular and Maintainable Architecture"
-  - Principle V: Created "Automated Deployment and Quality Assurance"
-- Templates Checked for Consistency:
-  - ✅ .specify/templates/plan-template.md
-  - ✅ .specify/templates/spec-template.md
-  - ✅ .specify/templates/tasks-template.md
-- Follow-up TODOs: None
--->
-# Physical AI & Humanoid Robotics Textbook Constitution
+# [PROJECT_NAME] Constitution
+<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
 
 ## Core Principles
 
-### I. Spec-Driven Content Creation
-All features and content, from the Docusaurus textbook to the RAG chatbot, MUST originate from a clear, reviewed, and approved specification. Implementation work shall not begin until a corresponding `spec.md` is complete and unambiguous.
+### [PRINCIPLE_1_NAME]
+<!-- Example: I. Library-First -->
+[PRINCIPLE_1_DESCRIPTION]
+<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
 
-**Rationale**: This ensures that all development work is aligned with user needs and project goals, preventing scope creep and wasted effort. It separates the "what" from the "how."
+### [PRINCIPLE_2_NAME]
+<!-- Example: II. CLI Interface -->
+[PRINCIPLE_2_DESCRIPTION]
+<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
 
-### II. Pedagogical Content Focus
-The primary goal is to create a world-class educational resource. All content MUST be accurate, clear, engaging, and pedagogically effective. The material must successfully bridge the gap between digital AI theory and physical robotic application.
+### [PRINCIPLE_3_NAME]
+<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
+[PRINCIPLE_3_DESCRIPTION]
+<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
 
-**Rationale**: The project's success is measured by its ability to educate. The content's quality and educational value are therefore non-negotiable and take precedence over purely technical considerations.
+### [PRINCIPLE_4_NAME]
+<!-- Example: IV. Integration Testing -->
+[PRINCIPLE_4_DESCRIPTION]
+<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
 
-### III. Secure, Ethical, and Responsible AI
-While building systems that control physical robots, the project MUST address the security, ethical, and societal implications of Physical AI. Implementations, especially for the capstone project, must include safeguards and reflect responsible AI practices.
+### [PRINCIPLE_5_NAME]
+<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
+[PRINCIPLE_5_DESCRIPTION]
+<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
 
-**Rationale**: Humanoid robots operating in the real world carry inherent risks. Acknowledging and mitigating these risks from the outset is a core responsibility of the project.
+### [PRINCIPLE_6_NAME]
 
-### IV. Modular and Maintainable Architecture
-The project will be built on a modular and decoupled technology stack (Docusaurus, FastAPI, ROS 2, NVIDIA Isaac). Each component should be independently maintainable, testable, and deployable where possible.
 
-**Rationale**: A modular architecture simplifies development, allows for parallel workstreams (e.g., book content vs. chatbot backend), and makes the system easier to maintain and scale over time.
+[PRINCIPLE__DESCRIPTION]
 
-### V. Automated Deployment and Quality Assurance
-The Docusaurus textbook MUST be deployed via an automated CI/CD pipeline to GitHub Pages. The pipeline MUST include automated checks for broken links, markdown linting, and other quality gates.
+## [SECTION_2_NAME]
+<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
 
-**Rationale**: Automation ensures consistent, high-quality deployments, reduces the risk of human error, and allows the team to focus on creating content and features rather than manual release processes.
+[SECTION_2_CONTENT]
+<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
+
+## [SECTION_3_NAME]
+<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
+
+[SECTION_3_CONTENT]
+<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
 
 ## Governance
-This Constitution is the authoritative source for project principles and supersedes all other practices or documentation. Adherence is mandatory for all contributors. Amendments to this constitution require a documented proposal, review, and an update to the version number. All planning and implementation MUST reference these principles to justify decisions.
+<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-**Version**: 1.0.0 | **Ratified**: 2025-11-28 | **Last Amended**: 2025-11-28
+[GOVERNANCE_RULES]
+<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+
+**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
+<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
