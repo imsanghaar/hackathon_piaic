@@ -3,9 +3,11 @@ sidebar_position: 1
 title: The Robotic Nervous System (ROS 2) Overview
 ---
 
+This module introduces ROS 2 (Robot Operating System 2), the essential middleware for modern robotics. It covers core concepts like nodes, topics, services, and actions, and delves into how ROS 2 facilitates seamless communication and control for complex Physical AI and humanoid robot systems.
+
 # The Robotic Nervous System (ROS 2) Overview
 
-The Robot Operating System (ROS) has become the de facto standard middleware for roboticists, providing a flexible framework for writing robot software. ROS 2, the successor, brings significant improvements in real-time capabilities, security, and multi-robot support, making it ideal for complex Physical AI and Humanoid Robotics applications. This module introduces the core components of ROS 2 and how they facilitate sophisticated robot control.
+ROS 2 (Robot Operating System 2) serves as the 'nervous system' for modern robots, providing a flexible framework of tools, libraries, and conventions for developing complex robotic applications. It enables seamless communication and coordination between diverse hardware and software components, from sensors and actuators to AI algorithms, crucial for building sophisticated Physical AI systems and humanoid robots.
 
 ## Focus: Middleware for Robot Control
 

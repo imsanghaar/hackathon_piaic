@@ -3,11 +3,11 @@ sidebar_position: 1
 title: Hardware Requirements for Physical AI & Humanoid Robotics
 ---
 
+This section details the essential hardware components and configurations required to build a capable Physical AI laboratory. It covers everything from high-performance workstations for simulation and AI training to specialized edge computing kits and various robot platforms, ensuring you have the right tools for hands-on development.
+
 # Hardware Requirements for Physical AI & Humanoid Robotics
 
-This course, focused on Physical AI and Humanoid Robotics, is inherently technically demanding. It navigates the complex intersection of several computationally intensive domains: physics simulation, visual perception, and generative AI. To effectively engage with the material and successfully complete the capstone projects, students require access to specific hardware configurations. This chapter details the essential hardware components and considerations for building a capable Physical AI laboratory, ranging from individual workstations to specialized robot platforms.
-
-The capstone project, involving a "Simulated Humanoid," necessitates a primary investment in high-performance workstations. However, to truly embody the "Physical AI" promise, supplementary hardware like Edge Computing Kits (providing the "brains without bodies") or dedicated robot hardware is also crucial for bridging the gap between simulation and real-world application.
+Physical AI and Humanoid Robotics demand robust hardware for perception, processing, and action. Key requirements include high-performance compute (CPUs, GPUs, AI accelerators), advanced sensing (cameras, LiDAR, force/torque sensors), precision actuation (motors, servos), robust power systems, and efficient communication. This chapter details the essential hardware components and considerations for building a capable Physical AI laboratory, ranging from individual workstations to specialized robot platforms, ensuring students can effectively engage with complex simulations and real-world robotic applications.
 
 ## 1. The "Digital Twin" Workstation (Required per Student)
 

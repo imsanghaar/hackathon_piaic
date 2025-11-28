@@ -5,7 +5,7 @@ title: NVIDIA Isaac Platform for Perception and Training
 
 # NVIDIA Isaac Platform: Deep Dive into Perception and Training
 
-Building upon the overview, this section delves deeper into the practical application of the NVIDIA Isaac platform, focusing on how its components facilitate advanced perception capabilities and robust AI model training for humanoid robots. These weeks provide hands-on experience with the tools that enable robots to understand and interact with their environment intelligently.
+NVIDIA Isaac platform provides comprehensive tools for developing, simulating, and deploying AI-powered robots, with a strong focus on perception and training. This section delves into how Isaac ROS accelerates vision pipelines for tasks like object detection and pose estimation, and how Isaac Sim enables synthetic data generation in simulation environments. These capabilities are crucial for efficiently training robust AI models for humanoid robotics, bridging the gap between virtual experimentation and real-world deployment.
 
 ## Weeks 8-10: Mastering the NVIDIA Isaac Platform
 

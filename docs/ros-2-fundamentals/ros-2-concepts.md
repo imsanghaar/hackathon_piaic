@@ -5,6 +5,8 @@ title: ROS 2 Core Concepts and Fundamentals
 
 # ROS 2 Core Concepts and Fundamentals
 
+ROS 2 (Robot Operating System 2) is a flexible framework providing tools, libraries, and conventions for building complex robotic applications. This section dives into its foundational elements: nodes, topics, services, actions, and parameters, which enable distributed, real-time, and secure communication among various components of a robotic system. Understanding these core concepts is essential for developing robust and scalable Physical AI solutions.
+
 ## Weeks 3-5: Deep Dive into ROS 2 Fundamentals
 
 This section provides a more detailed exploration of the foundational elements of ROS 2, crucial for anyone looking to develop robust and scalable robotic applications, particularly in the domain of physical AI and humanoid robotics. Understanding these concepts is the gateway to effectively leveraging ROS 2 for complex tasks.

@@ -3,7 +3,13 @@ sidebar_position: 1
 title: The Rise of Physical AI and Humanoid Robotics
 ---
 
+This section provides a foundational understanding of Physical AI and Humanoid Robotics, exploring why this convergence of intelligent systems and physical embodiment is crucial for future technological advancements. It outlines the core principles, learning outcomes, and the overall vision of the course.
+
 # The Rise of Physical AI and Humanoid Robotics
+
+Physical AI refers to artificial intelligence systems that interact directly with the physical world through sensors and actuators, enabling them to perceive, reason, and act within real-world environments. Humanoid Robotics focuses on creating robots that resemble the human body, designed to perform tasks or interact with environments built for humans. This course explores the convergence of these two fields, preparing students to build intelligent, embodied systems.
+
+This book serves as a comprehensive guide to understanding and implementing Physical AI and Humanoid Robotics. It covers foundational concepts, essential middleware like ROS 2, advanced simulation techniques using Gazebo and Unity, the powerful NVIDIA Isaac platform, and the cutting-edge integration of Vision-Language-Action (VLA) models for conversational robotics. Designed for aspiring roboticists, AI engineers, and researchers, this resource provides the knowledge and practical skills necessary to navigate this rapidly evolving domain.
 
 ## Why Physical AI Matters
 

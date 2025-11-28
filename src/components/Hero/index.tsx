@@ -5,7 +5,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
 
 // Book cover image from static folder
-const HeroImageUrl = '/img/Humanoid.png';
+const HeroImageUrl = '/img/book-cover.png';
 
 // Tag icons
 const OpenSourceIcon = '📖';
@@ -31,7 +31,7 @@ export default function Hero(): React.ReactElement {
             The Rise Of Physical AI and Humanoid Robotics
           </h1>
           <p className={styles.heroSubtitle}>
-            Colearning Agentic AI with Python and TypeScript – Spec Driven Reusable Intelligence
+            Building the Future of Embodied Intelligence and Humanoid Robotics
           </p>
           <div className={styles.tagButtons}>
             <div className={styles.tagButton}>

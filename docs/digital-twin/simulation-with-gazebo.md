@@ -5,7 +5,7 @@ title: Robot Simulation with Gazebo and Unity
 
 # Robot Simulation with Gazebo and Unity: Practical Applications
 
-This section delves into the practical aspects of setting up and utilizing simulation environments, specifically focusing on Gazebo for its robust physics capabilities and Unity for its advanced rendering and interactive potential. These tools are critical for iteratively designing, testing, and refining robotic systems without the constraints and risks associated with physical hardware.
+Gazebo is an open-source 3D robot simulator known for its robust physics engine and tight ROS integration, ideal for validating robotic algorithms. Unity, a powerful game engine, offers advanced rendering and a growing robotics ecosystem for high-fidelity sensor simulation and AI training. This section explores the practical setup and utilization of both Gazebo and Unity for designing, testing, and refining robotic systems in virtual environments.
 
 ## Weeks 6-7: Mastering Robot Simulation with Gazebo
 

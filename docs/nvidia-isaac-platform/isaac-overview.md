@@ -3,9 +3,11 @@ sidebar_position: 1
 title: The AI-Robot Brain (NVIDIA Isaac™) Overview
 ---
 
+Dive into the NVIDIA Isaac platform, a comprehensive suite of tools, software, and hardware designed to accelerate AI-powered robotics. This module covers advanced perception, simulation, and autonomous capabilities, leveraging Isaac Sim and Isaac ROS to bring intelligent Physical AI applications to life.
+
 # The AI-Robot Brain: NVIDIA Isaac Platform
 
-The NVIDIA Isaac platform is a comprehensive suite of hardware, software, and tools designed to accelerate the development and deployment of AI-powered robots, particularly for complex scenarios like humanoid robotics. It serves as the "brain" for intelligent machines, enabling advanced perception, simulation, and autonomous capabilities. This module explores the key components of the Isaac platform and their role in bringing Physical AI to life.
+NVIDIA Isaac Platform is a comprehensive suite of hardware, software, and tools designed for the development, simulation, and deployment of AI-powered robots. Comprising Isaac SDK, Isaac Sim for simulation, and Isaac ROS for accelerating ROS 2, it provides the "brain" for intelligent machines, enabling advanced perception, autonomous capabilities, and efficient AI model training for complex scenarios like humanoid robotics.
 
 ## Focus: Advanced Perception and Training
 

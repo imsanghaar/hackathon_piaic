@@ -16,36 +16,10 @@ const sidebars: SidebarsConfig = {
   tutorialSidebar: [
     {
       type: 'category',
-      label: 'Digital Twin',
-      link: {
-        type: 'generated-index',
-        title: 'Digital Twin',
-        slug: '/category/digital-twin',
-      },
-      items: [
-        'digital-twin/digital-twin-overview',
-        'digital-twin/simulation-with-gazebo',
-      ],
-    },
-    {
-      type: 'category',
-      label: 'Hardware Requirements',
-      link: {
-        type: 'generated-index',
-        title: 'Hardware Requirements',
-        slug: '/category/hardware-requirements',
-      },
-      items: [
-        'hardware-requirements/index',
-      ],
-    },
-    {
-      type: 'category',
       label: 'Introduction',
       link: {
-        type: 'generated-index',
-        title: 'Introduction',
-        slug: '/category/introduction',
+        type: 'doc',
+        id: 'introduction/index',
       },
       items: [
         'introduction/index',
@@ -53,24 +27,10 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
-      label: 'Nvidia Isaac Platform',
+      label: 'Module 1: ROS 2 Fundamentals',
       link: {
-        type: 'generated-index',
-        title: 'Nvidia Isaac Platform',
-        slug: '/category/nvidia-isaac-platform',
-      },
-      items: [
-        'nvidia-isaac-platform/isaac-overview',
-        'nvidia-isaac-platform/isaac-perception-training',
-      ],
-    },
-    {
-      type: 'category',
-      label: 'ROS 2 Fundamentals',
-      link: {
-        type: 'generated-index',
-        title: 'ROS 2 Fundamentals',
-        slug: '/category/ros-2-fundamentals',
+        type: 'doc',
+        id: 'ros-2-fundamentals/ros-2-overview',
       },
       items: [
         'ros-2-fundamentals/ros-2-concepts',
@@ -79,15 +39,51 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
-      label: 'VLA and Conversational Robotics',
+      label: 'Module 2: The Digital Twin',
       link: {
-        type: 'generated-index',
-        title: 'VLA and Conversational Robotics',
-        slug: '/category/vla-and-conversational-robotics',
+        type: 'doc',
+        id: 'digital-twin/digital-twin-overview',
+      },
+      items: [
+        'digital-twin/digital-twin-overview',
+        'digital-twin/simulation-with-gazebo',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Module 3: NVIDIA Isaac Platform',
+      link: {
+        type: 'doc',
+        id: 'nvidia-isaac-platform/isaac-overview',
+      },
+      items: [
+        'nvidia-isaac-platform/isaac-overview',
+        'nvidia-isaac-platform/isaac-perception-training',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Module 4: VLA and Conversational Robotics',
+      link: {
+        type: 'doc',
+        id: 'vla-and-conversational-robotics/vla-overview',
       },
       items: [
         'vla-and-conversational-robotics/humanoid-robot-development',
         'vla-and-conversational-robotics/vla-overview',
+      ],
+    },
+    'weekly-breakdown',
+    'assessments',
+    {
+      type: 'category',
+      label: 'Hardware Requirements',
+      link: {
+        type: 'doc',
+        id: 'hardware-requirements/index',
+      },
+      items: [
+        'hardware-requirements/index',
       ],
     },
   ],
