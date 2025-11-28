@@ -89,6 +89,7 @@
   background: rgba(255, 255, 255, 0.05); /* Slightly translucent background */
   backdrop-filter: blur(10px); /* Frosted glass effect */
   transition: all 0.3s ease; /* Smooth transitions */
+  margin-bottom: 1rem; /* NEW: Add space below the series name */
 }
 
 .heroTitle {
@@ -245,5 +246,14 @@
   .buttonSecondary {
     padding: 0.8rem 1.5rem;
     font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .seriesNameBordered {
+    font-size: 0.60rem; /* Reduce font size */
+    padding: 0.5rem 1rem; /* Reduce padding */
+    letter-spacing: 1px; /* Reduce letter spacing */
+    white-space: normal; /* Allow text to wrap */
   }
 }
