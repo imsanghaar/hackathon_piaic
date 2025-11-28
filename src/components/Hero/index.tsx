@@ -1,10 +1,11 @@
 import React from 'react';
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
 
 // Book cover image from static folder
-const HeroImageUrl = '/img/hero-image.jpeg';
+const HeroImageUrl = '/img/Humanoid.png';
 
 // Tag icons
 const OpenSourceIcon = '📖';
@@ -17,17 +18,17 @@ export default function Hero(): React.ReactElement {
       <div className={clsx('container', styles.heroContainer)}>
         <div className={styles.heroImageContainer}>
           <img
-            src={HeroImageUrl}
-            alt="AI Native Software Development Book Cover"
+            src={useBaseUrl(HeroImageUrl)}
+            alt="Humanoid Robot Image"
             className={styles.heroImage}
           />
         </div>
         <div className={styles.heroTextContainer}>
-          <div className={styles.seriesName}>
-            SANGHAAR AI-NATIVE BOOK SERIES
+          <div className={clsx(styles.seriesNameBordered)}>
+            IMAM SANGHAAR AI BOOK SERIES
           </div>
           <h1 className={styles.heroTitle}>
-            AI Native Software Development
+            The Rise Of Physical AI and Humanoid Robotics
           </h1>
           <p className={styles.heroSubtitle}>
             Colearning Agentic AI with Python and TypeScript – Spec Driven Reusable Intelligence
@@ -44,7 +45,7 @@ export default function Hero(): React.ReactElement {
             </div>
           </div>
           <div className={styles.mainButtons}>
-            <Link to="/docs/intro" className={styles.buttonPrimary}>
+            <Link to="/docs/introduction/" className={styles.buttonPrimary}>
               Start Reading →
             </Link>
             <Link to="https://sanghaar.vercel.app/" className={styles.buttonSecondary}>

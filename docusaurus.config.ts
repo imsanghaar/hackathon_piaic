@@ -5,8 +5,8 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'AI Native Software Development',
-  tagline: 'Build the future with AI-powered development',
+  title: 'The Rise Of Physical AI and Humanoid Robotics',
+  tagline: 'AI Systems in the Physical World. Embodied Intelligence.',
   favicon: 'img/logo.png',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -15,14 +15,14 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://sanghaar.vercel.app', // Vercel deployment URL
+  url: 'https://imsanghaar.github.io', // Vercel deployment URL
   // Set the /<baseUrl>/ pathname under which your site is served
   baseUrl: '/', // Root path for Vercel deployment
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  // organizationName: 'imsanghaar', // Usually your GitHub org/user name.
-  // projectName: 'hackathon_piaic', // Usually your repo name.
+  organizationName: 'imsanghaar', // Usually your GitHub org/user name.
+  projectName: 'my-book', // Usually your repo name.
 
   onBrokenLinks: 'warn',
 
@@ -66,7 +66,7 @@ const config: Config = {
       respectPrefersColorScheme: false,
     },
     navbar: {
-      title: 'AI Native Software Development',
+      title: 'The Rise of Physical AI and Humanoid Robotics',
       logo: {
         alt: 'AI Native Logo',
         src: 'img/logo.png',
@@ -93,15 +93,15 @@ const config: Config = {
           items: [
             {
               label: 'Start Your Journey',
-              to: '/docs/intro', // Assuming this links to the book intro
+              to: '/docs/introduction/', // Assuming this links to the book intro
             },
             {
               label: 'My Work',
               href: 'https://sanghaar.vercel.app/', // Author's portfolio
             },
             {
-              label: 'Contact Me',
-              href: 'https://sanghaar.vercel.app/', // Author's portfolio
+              label: 'WhatsApp',
+              href: 'https://wa.me/923441323835', // Author's WhatsApp
             },
           ],
         },
@@ -109,12 +109,8 @@ const config: Config = {
           title: 'COMMUNITY',
           items: [
             {
-              label: 'YouTube',
-              href: 'https://www.youtube.com/@imsanghaar', // Author's YouTube channel
-            },
-            {
               label: 'LinkedIn',
-              href: 'https://www.linkedin.com/in/imsanghaar/', // Author's LinkedIn
+              href: 'https://www.linkedin.com/in/imam-sanghaar-chandio-96780b274/', // Author's LinkedIn
             },
             {
               label: 'Instagram',
@@ -122,7 +118,7 @@ const config: Config = {
             },
             {
               label: 'Facebook',
-              href: 'https://www.facebook.com/imsanghaar', // Author's Facebook
+              href: 'https://www.facebook.com/profile.php?id=61556981875577', // Author's Facebook
             },
           ],
         },
