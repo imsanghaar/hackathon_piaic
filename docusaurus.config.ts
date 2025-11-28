@@ -17,7 +17,7 @@ const config: Config = {
   // Set the production url of your site here
   url: 'https://imsanghaar.github.io', // Vercel deployment URL
   // Set the /<baseUrl>/ pathname under which your site is served
-  baseUrl: '/my-book/', // Root path for Vercel deployment
+  baseUrl: '/', // Root path for Vercel deployment
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
