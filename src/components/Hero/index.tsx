@@ -5,7 +5,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
 
 // Book cover image from static folder
-const HeroImageUrl = '/img/book-cover.png';
+const HeroImageUrl = '/img/hero-image.jpeg';
 
 // Tag icons
 const OpenSourceIcon = '📖';
