@@ -1,4 +1,4 @@
-import type {SidebarsConfig} from '@docusaurus/plugin-content-docs';
+import type { SidebarsConfig } from '@docusaurus/plugin-content-docs';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
@@ -14,16 +14,11 @@ import type {SidebarsConfig} from '@docusaurus/plugin-content-docs';
  */
 const sidebars: SidebarsConfig = {
   tutorialSidebar: [
+    'preface',
     {
-      type: 'category',
+      type: 'doc',
+      id: 'introduction/index',
       label: 'Introduction',
-      link: {
-        type: 'doc',
-        id: 'introduction/index',
-      },
-      items: [
-        'introduction/index',
-      ],
     },
     {
       type: 'category',
@@ -34,7 +29,6 @@ const sidebars: SidebarsConfig = {
       },
       items: [
         'ros-2-fundamentals/ros-2-concepts',
-        'ros-2-fundamentals/ros-2-overview',
       ],
     },
     {
@@ -45,7 +39,6 @@ const sidebars: SidebarsConfig = {
         id: 'digital-twin/digital-twin-overview',
       },
       items: [
-        'digital-twin/digital-twin-overview',
         'digital-twin/simulation-with-gazebo',
       ],
     },
@@ -57,7 +50,6 @@ const sidebars: SidebarsConfig = {
         id: 'nvidia-isaac-platform/isaac-overview',
       },
       items: [
-        'nvidia-isaac-platform/isaac-overview',
         'nvidia-isaac-platform/isaac-perception-training',
       ],
     },
@@ -70,7 +62,6 @@ const sidebars: SidebarsConfig = {
       },
       items: [
         'vla-and-conversational-robotics/humanoid-robot-development',
-        'vla-and-conversational-robotics/vla-overview',
       ],
     },
     'weekly-breakdown',

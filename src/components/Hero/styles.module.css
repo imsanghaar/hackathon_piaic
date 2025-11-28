@@ -1,8 +1,24 @@
 .heroSection {
-  padding: 4rem 2rem;
+  padding-top: 4rem; /* Matched to reference site (64px) */
+  padding-bottom: 4rem; /* Matched to reference site (64px) */
+  padding-left: 2rem;
+  padding-right: 2rem;
+  /* This will be the light mode background (colorful dark gradient) */
   background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  color: white; /* Text color for light mode hero */
+  min-height: 600px; /* Matched to reference site */
+  display: flex;
+  align-items: center;
+}
+
+.heroSectionDark { /* New class for dark mode hero (plain black) */
+  padding-top: 4rem; /* Matched to reference site (64px) */
+  padding-bottom: 4rem; /* Matched to reference site (64px) */
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background: #000000; /* Plain black background */
   color: white;
-  min-height: 600px;
+  min-height: 600px; /* Matched to reference site */
   display: flex;
   align-items: center;
 }
@@ -13,6 +29,7 @@
   justify-content: space-between;
   gap: 4rem;
   flex-wrap: wrap;
+  padding: 0 2rem; /* Ensure horizontal padding for content */
 }
 
 .heroImageContainer {
@@ -36,13 +53,13 @@
   width: 100%;
   height: auto;
   border-radius: 12px;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3); /* Good for both modes, adjust if needed */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .heroImage:hover {
   transform: translateY(-5px) scale(1.02);
-  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.4); /* Good for both modes, adjust if needed */
 }
 
 .heroTextContainer {
@@ -65,7 +82,7 @@
   }
 }
 
-.seriesName {
+.seriesName { /* Default for light mode hero text */
   font-size: 0.85rem;
   font-weight: 700;
   color: #a0a0b0;
@@ -74,25 +91,35 @@
   text-transform: uppercase;
 }
 
-.seriesNameBordered {
-  display: inline-flex; /* Use inline-flex to make border wrap content */
-  align-items: center;
-  gap: 0.5rem; /* Space between icon and text if an icon were present */
-  padding: 0.6rem 1.2rem;
-  border: 1px solid rgba(255, 255, 255, 0.2); /* Light border */
-  border-radius: 25px; /* Rounded corners */
-  font-size: 0.85rem;
-  font-weight: 700;
-  color: #a0a0b0; /* Same color as .seriesName */
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  background: rgba(255, 255, 255, 0.05); /* Slightly translucent background */
-  backdrop-filter: blur(10px); /* Frosted glass effect */
-  transition: all 0.3s ease; /* Smooth transitions */
-  margin-bottom: 1rem; /* NEW: Add space below the series name */
+.seriesNameDark { /* For dark mode hero text */
+  color: #c0c0d0;
 }
 
-.heroTitle {
+.seriesNameBordered { /* Default for light mode hero text */
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 25px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #a0a0b0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  margin-bottom: 1rem;
+}
+
+.seriesNameBorderedDark { /* For dark mode hero text */
+  color: #c0c0d0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.heroTitle { /* Default for light mode hero title (colorful gradient) */
   font-size: 3.5rem;
   font-weight: 800;
   margin-bottom: 1.5rem;
@@ -103,11 +130,21 @@
   background-clip: text;
 }
 
-.heroSubtitle {
+.heroTitleDark { /* For dark mode hero title (plain white) */
+  color: white;
+  background: none;
+  -webkit-text-fill-color: initial;
+}
+
+.heroSubtitle { /* Default for light mode hero subtitle */
   font-size: 1.25rem;
   color: #c0c0d0;
   margin-bottom: 2rem;
   line-height: 1.6;
+}
+
+.heroSubtitleDark { /* For dark mode hero subtitle */
+  color: #e0e0e0;
 }
 
 .tagButtons {
@@ -117,7 +154,7 @@
   flex-wrap: wrap;
 }
 
-.tagButton {
+.tagButton { /* Default for light mode hero tags */
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -129,16 +166,19 @@
   backdrop-filter: blur(10px);
   transition: all 0.3s ease;
   cursor: default;
+  color: white; /* Default color for tags */
+}
+
+.tagButtonDark { /* For dark mode hero tags */
+  color: #e0e0e0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.02);
 }
 
 .tagButton:hover {
   background: rgba(255, 255, 255, 0.1);
   border-color: rgba(255, 255, 255, 0.3);
   transform: translateY(-2px);
-}
-
-.tagButton span {
-  font-size: 1.1rem;
 }
 
 .mainButtons {
@@ -168,7 +208,7 @@
   text-decoration: none;
 }
 
-.buttonSecondary {
+.buttonSecondary { /* Default for light mode hero button */
   padding: 0.9rem 2rem;
   border-radius: 8px;
   background: transparent;
@@ -181,6 +221,11 @@
   font-size: 1rem;
 }
 
+.buttonSecondaryDark { /* For dark mode hero button */
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  color: #e0e0e0;
+}
+
 .buttonSecondary:hover {
   background: rgba(255, 255, 255, 0.1);
   border-color: rgba(255, 255, 255, 0.5);
@@ -191,7 +236,7 @@
 
 /* Responsive adjustments */
 @media (max-width: 996px) {
-  .heroSection {
+  .heroSection, .heroSectionDark { /* Apply to both base and dark mode */
     padding: 3rem 1.5rem;
     min-height: auto;
   }
@@ -211,11 +256,11 @@
     max-width: 100%;
   }
 
-  .heroTitle {
+  .heroTitle, .heroTitleDark { /* Apply to both base and dark mode */
     font-size: 2.5rem;
   }
 
-  .heroSubtitle {
+  .heroSubtitle, .heroSubtitleDark { /* Apply to both base and dark mode */
     font-size: 1.1rem;
   }
 
@@ -229,31 +274,31 @@
 }
 
 @media (max-width: 600px) {
-  .heroTitle {
+  .heroTitle, .heroTitleDark {
     font-size: 2rem;
   }
 
-  .heroSubtitle {
+  .heroSubtitle, .heroSubtitleDark {
     font-size: 1rem;
   }
 
-  .tagButton {
+  .tagButton, .tagButtonDark {
     font-size: 0.85rem;
     padding: 0.5rem 1rem;
   }
 
   .buttonPrimary,
-  .buttonSecondary {
+  .buttonSecondary, .buttonSecondaryDark {
     padding: 0.8rem 1.5rem;
     font-size: 0.95rem;
   }
 }
 
 @media (max-width: 600px) {
-  .seriesNameBordered {
-    font-size: 0.60rem; /* Reduce font size */
-    padding: 0.5rem 1rem; /* Reduce padding */
-    letter-spacing: 1px; /* Reduce letter spacing */
-    white-space: normal; /* Allow text to wrap */
+  .seriesNameBordered, .seriesNameBorderedDark {
+    font-size: 0.60rem;
+    padding: 0.3rem 0.5rem;
+    letter-spacing: 1px;
+    white-space: normal;
   }
 }

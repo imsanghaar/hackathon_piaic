@@ -33,6 +33,12 @@
   margin-right: auto;
 }
 
+.narrowSubtitle {
+  max-width: 600px; /* Adjust as needed */
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .cardGrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
