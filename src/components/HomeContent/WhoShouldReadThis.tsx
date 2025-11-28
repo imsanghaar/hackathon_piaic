@@ -1,21 +1,67 @@
 import React from 'react';
 import clsx from 'clsx';
-import styles from './styles.module.css'; // Reusing the same styles
+import styles from './styles.module.css';
+
+const audienceCards = [
+  {
+    icon: '🎓',
+    title: 'Students & Aspiring Roboticists',
+    description: 'Begin your journey into Physical AI and Humanoid Robotics with comprehensive, hands-on learning.',
+  },
+  {
+    icon: '🤖',
+    title: 'AI Engineers',
+    description: 'Expand your expertise into embodied intelligence and learn to deploy AI in the physical world.',
+  },
+  {
+    icon: '💻',
+    title: 'Developers',
+    description: 'Integrate Large Language Models with robotic systems and build conversational AI robots.',
+  },
+  {
+    icon: '🔬',
+    title: 'Researchers',
+    description: 'Bridge the gap between simulation and real-world deployment with cutting-edge tools and techniques.',
+  },
+  {
+    icon: '🚀',
+    title: 'Entrepreneurs',
+    description: 'Build the next generation of robotic products and services with Physical AI capabilities.',
+  },
+  {
+    icon: '🏭',
+    title: 'Industry Professionals',
+    description: 'Upgrade your skills for the robotics revolution transforming manufacturing and automation.',
+  },
+];
 
 export default function WhoShouldReadThis() {
   return (
-    <section className={clsx(styles.section)}> {/* Using default section style */}
+    <section className={clsx(styles.section)}>
       <div className={styles.container}>
         <h2 className={styles.title}>Who Should Read This?</h2>
-        <p className={clsx(styles.subtitle, styles.narrowSubtitle)}>This book is designed for:</p>
-        <ul className={styles.list}>
-          <li className={styles.listItem}>Aspiring Roboticists and AI Engineers</li>
-          <li className={styles.listItem}>Students and Professionals interested in Physical AI, Humanoid Robotics, and Embodied Intelligence</li>
-          <li className={styles.listItem}>Developers looking to integrate Large Language Models (LLMs) with robotic systems</li>
-          <li className={styles.listItem}>Researchers and enthusiasts eager to bridge the gap between simulation and real-world robot deployment</li>
-        </ul>
-        <h2 className={styles.title}>Prerequisites</h2>
-        <p className={clsx(styles.subtitle, styles.narrowSubtitle)}>To get the most out of this course, a basic understanding of programming (Python preferred) and fundamental AI/ML concepts is recommended. Familiarity with Linux environments will also be beneficial.</p>
+        <p className={clsx(styles.subtitle, styles.narrowSubtitle)}>
+          This book is designed for diverse learners eager to master Physical AI and Humanoid Robotics
+        </p>
+
+        <div className={styles.cardsGrid}>
+          {audienceCards.map((card, index) => (
+            <div key={index} className={styles.audienceCard}>
+              <div className={styles.cardIcon}>{card.icon}</div>
+              <h3 className={styles.cardTitle}>{card.title}</h3>
+              <p className={styles.cardDescription}>{card.description}</p>
+            </div>
+          ))}
+        </div>
+
+        <div className={styles.prerequisitesBox}>
+          <h3 className={styles.prerequisitesTitle}>📋 Prerequisites</h3>
+          <p className={styles.prerequisitesText}>
+            To get the most out of this course, a basic understanding of <strong>programming (Python preferred)</strong> and
+            fundamental <strong>AI/ML concepts</strong> is recommended. Familiarity with <strong>Linux environments</strong> will
+            also be beneficial.
+          </p>
+        </div>
       </div>
     </section>
   );
