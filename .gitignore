@@ -1,1 +1,25 @@
 .vercel
+# Dependency directories
+node_modules/
+.cache/
+build/
+
+# Docusaurus build output
+.docusaurus/
+.deploy/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Mac / Windows junk
+.DS_Store
+Thumbs.db
+
+# Vercel local folder
+.vercel/
+
+# Environment variables
+*.env
+*.env.local
