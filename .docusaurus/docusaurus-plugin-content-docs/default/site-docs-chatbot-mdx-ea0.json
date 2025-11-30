@@ -1,0 +1,27 @@
+{
+  "id": "chatbot",
+  "title": "AI Chatbot",
+  "description": "<iframe",
+  "source": "@site/docs/chatbot.mdx",
+  "sourceDirName": ".",
+  "slug": "/chatbot",
+  "permalink": "/docs/chatbot",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/chatbot.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "chatbot",
+    "title": "AI Chatbot"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Chapter 16 – Emerging Tools for AI‑Native Development",
+    "permalink": "/docs/tools-and-platforms"
+  },
+  "next": {
+    "title": "Writing code is over now",
+    "permalink": "/docs/writing-code-is-over-now"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "ai-development-spectrum",
+  "title": "The AI Development Spectrum",
+  "description": "Understanding the three levels of AI integration",
+  "source": "@site/docs/03-ai-development-spectrum.md",
+  "sourceDirName": ".",
+  "slug": "/ai-development-spectrum",
+  "permalink": "/docs/ai-development-spectrum",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/03-ai-development-spectrum.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3,
+    "title": "The AI Development Spectrum",
+    "description": "Understanding the three levels of AI integration"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Understanding AI Development",
+    "permalink": "/docs/understanding-ai-development"
+  },
+  "next": {
+    "title": "Core Pillars of AI-Native Development",
+    "permalink": "/docs/core-pillars"
+  }
+}

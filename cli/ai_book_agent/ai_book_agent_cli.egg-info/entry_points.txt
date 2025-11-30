@@ -1,0 +1,2 @@
+[console_scripts]
+ai-book-agent = ai_book_agent.main:main

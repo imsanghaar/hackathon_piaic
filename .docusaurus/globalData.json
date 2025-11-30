@@ -1,0 +1,93 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/docs",
+          "mainDocId": "preface",
+          "docs": [
+            {
+              "id": "assessments",
+              "path": "/docs/assessments",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "digital-twin/digital-twin-overview",
+              "path": "/docs/digital-twin/digital-twin-overview",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "digital-twin/simulation-with-gazebo",
+              "path": "/docs/digital-twin/simulation-with-gazebo",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "hardware-requirements/index",
+              "path": "/docs/hardware-requirements/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "introduction/index",
+              "path": "/docs/introduction/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "nvidia-isaac-platform/isaac-overview",
+              "path": "/docs/nvidia-isaac-platform/isaac-overview",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "nvidia-isaac-platform/isaac-perception-training",
+              "path": "/docs/nvidia-isaac-platform/isaac-perception-training",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "preface",
+              "path": "/docs/preface",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ros-2-fundamentals/ros-2-concepts",
+              "path": "/docs/ros-2-fundamentals/ros-2-concepts",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ros-2-fundamentals/ros-2-overview",
+              "path": "/docs/ros-2-fundamentals/ros-2-overview",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "vla-and-conversational-robotics/humanoid-robot-development",
+              "path": "/docs/vla-and-conversational-robotics/humanoid-robot-development",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "vla-and-conversational-robotics/vla-overview",
+              "path": "/docs/vla-and-conversational-robotics/vla-overview",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "weekly-breakdown",
+              "path": "/docs/weekly-breakdown",
+              "sidebar": "tutorialSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/docs/preface",
+                "label": "preface"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}

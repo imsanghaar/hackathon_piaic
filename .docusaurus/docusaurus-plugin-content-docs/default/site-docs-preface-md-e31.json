@@ -1,0 +1,23 @@
+{
+  "id": "preface",
+  "title": "Preface: Welcome to the Era of Physical AI",
+  "description": "The Journey from Digital to Physical Intelligence",
+  "source": "@site/docs/preface.md",
+  "sourceDirName": ".",
+  "slug": "/preface",
+  "permalink": "/docs/preface",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 0,
+  "frontMatter": {
+    "sidebar_position": 0,
+    "title": "Preface: Welcome to the Era of Physical AI"
+  },
+  "sidebar": "tutorialSidebar",
+  "next": {
+    "title": "Introduction",
+    "permalink": "/docs/introduction/"
+  }
+}

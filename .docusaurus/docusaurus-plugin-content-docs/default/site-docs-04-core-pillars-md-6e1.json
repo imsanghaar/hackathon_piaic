@@ -1,0 +1,27 @@
+{
+  "id": "core-pillars",
+  "title": "Core Pillars of AI-Native Development",
+  "description": "Building true AI-Native applications requires more than just access to a powerful model; it requires a new architectural and philosophical foundation. We can distill this foundation into four core pillars that support this new paradigm.",
+  "source": "@site/docs/04-core-pillars.md",
+  "sourceDirName": ".",
+  "slug": "/core-pillars",
+  "permalink": "/docs/core-pillars",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/04-core-pillars.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "The AI Development Spectrum",
+    "permalink": "/docs/ai-development-spectrum"
+  },
+  "next": {
+    "title": "What Makes This Book Different",
+    "permalink": "/docs/what-makes-this-book-different"
+  }
+}

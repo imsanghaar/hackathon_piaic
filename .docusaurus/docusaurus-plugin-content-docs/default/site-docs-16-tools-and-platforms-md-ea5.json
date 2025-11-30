@@ -1,0 +1,29 @@
+{
+  "id": "tools-and-platforms",
+  "title": "Chapter 16 – Emerging Tools for AI‑Native Development",
+  "description": "A concise overview of Opal, Opus 4.5, Firebase Studio, n8n, Zapier, and Fireflies, with guidance on usage and learning paths.",
+  "source": "@site/docs/16-tools-and-platforms.md",
+  "sourceDirName": ".",
+  "slug": "/tools-and-platforms",
+  "permalink": "/docs/tools-and-platforms",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/16-tools-and-platforms.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 16,
+  "frontMatter": {
+    "sidebar_position": 16,
+    "title": "Chapter 16 – Emerging Tools for AI‑Native Development",
+    "description": "A concise overview of Opal, Opus 4.5, Firebase Studio, n8n, Zapier, and Fireflies, with guidance on usage and learning paths."
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Chapter 15 - AI Trends 2025",
+    "permalink": "/docs/ai-trends-2025"
+  },
+  "next": {
+    "title": "AI Chatbot",
+    "permalink": "/docs/chatbot"
+  }
+}
