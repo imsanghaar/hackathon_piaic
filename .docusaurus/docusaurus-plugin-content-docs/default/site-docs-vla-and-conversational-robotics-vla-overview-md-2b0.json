@@ -1,0 +1,27 @@
+{
+  "id": "vla-and-conversational-robotics/vla-overview",
+  "title": "Vision-Language-Action (VLA) Overview",
+  "description": "Discover Vision-Language-Action (VLA) models and the exciting convergence of large language models (LLMs) with robotics. This module explores how robots can perceive their environment (vision), understand human instructions (language), and translate these into meaningful physical actions, enabling intuitive human-robot interaction and sophisticated autonomous behaviors.",
+  "source": "@site/docs/vla-and-conversational-robotics/vla-overview.md",
+  "sourceDirName": "vla-and-conversational-robotics",
+  "slug": "/vla-and-conversational-robotics/vla-overview",
+  "permalink": "/docs/vla-and-conversational-robotics/vla-overview",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1,
+    "title": "Vision-Language-Action (VLA) Overview"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "NVIDIA Isaac Platform for Perception and Training",
+    "permalink": "/docs/nvidia-isaac-platform/isaac-perception-training"
+  },
+  "next": {
+    "title": "Humanoid Robot Development and Conversational AI",
+    "permalink": "/docs/vla-and-conversational-robotics/humanoid-robot-development"
+  }
+}

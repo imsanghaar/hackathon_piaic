@@ -1,0 +1,27 @@
+{
+  "id": "organizational-ai-maturity",
+  "title": "Organizational AI Maturity Levels",
+  "description": "Just as individuals go on a journey to adopt AI, so do organizations. The transition to becoming an AI-Native company is a complex process involving changes to technology, strategy, culture, and talent. Understanding where your organization stands on this maturity spectrum is the first step toward accelerating your transformation.",
+  "source": "@site/docs/07-organizational-ai-maturity.md",
+  "sourceDirName": ".",
+  "slug": "/organizational-ai-maturity",
+  "permalink": "/docs/organizational-ai-maturity",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/07-organizational-ai-maturity.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 7,
+  "frontMatter": {
+    "sidebar_position": 7
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Your AI Journey",
+    "permalink": "/docs/your-ai-journey"
+  },
+  "next": {
+    "title": "The Great Shift",
+    "permalink": "/docs/the-great-shift"
+  }
+}

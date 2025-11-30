@@ -1,0 +1,27 @@
+{
+  "id": "from-automation-to-intelligence",
+  "title": "From Automation to Intelligence",
+  "description": "For decades, the goal of enterprise software has been automation. We build systems to automate repetitive, well-defined tasks, making human processes faster, cheaper, and more reliable. A script that runs a report, an assembly line robot, or a program that sends a nightly email—these are all classic examples of automation.",
+  "source": "@site/docs/09-from-automation-to-intelligence.md",
+  "sourceDirName": ".",
+  "slug": "/from-automation-to-intelligence",
+  "permalink": "/docs/from-automation-to-intelligence",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/09-from-automation-to-intelligence.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 9,
+  "frontMatter": {
+    "sidebar_position": 9
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "The Great Shift",
+    "permalink": "/docs/the-great-shift"
+  },
+  "next": {
+    "title": "From Coding to Co-Creating",
+    "permalink": "/docs/from-coding-to-co-creating"
+  }
+}

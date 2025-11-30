@@ -1,0 +1,27 @@
+{
+  "id": "vla-and-conversational-robotics/humanoid-robot-development",
+  "title": "Humanoid Robot Development and Conversational AI",
+  "description": "Humanoid Robot Development focuses on engineering robots that mimic human form and capabilities, tackling challenges like bipedal locomotion, advanced manipulation, and intuitive human-robot interaction. Conversational AI, through technologies like natural language processing and generation, enables these robots to understand and respond to human language, bridging the gap between physical action and intelligent dialogue. This section explores the convergence of these fields.",
+  "source": "@site/docs/vla-and-conversational-robotics/humanoid-robot-development.md",
+  "sourceDirName": "vla-and-conversational-robotics",
+  "slug": "/vla-and-conversational-robotics/humanoid-robot-development",
+  "permalink": "/docs/vla-and-conversational-robotics/humanoid-robot-development",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2,
+    "title": "Humanoid Robot Development and Conversational AI"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Vision-Language-Action (VLA) Overview",
+    "permalink": "/docs/vla-and-conversational-robotics/vla-overview"
+  },
+  "next": {
+    "title": "Weekly Breakdown",
+    "permalink": "/docs/weekly-breakdown"
+  }
+}
