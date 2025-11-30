@@ -1,4 +1,0 @@
-commands
-models
-services
-utils

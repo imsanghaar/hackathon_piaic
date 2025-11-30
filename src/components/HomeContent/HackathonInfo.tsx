@@ -29,7 +29,6 @@ export default function HackathonInfo() {
                         <h3 className={styles.cardTitle}>Core Requirements</h3>
                         <ul className={styles.list}>
                             <li className={styles.listItem}><strong>AI/Spec-Driven Book Creation:</strong> Write using Docusaurus, Spec-Kit Plus, and Claude Code.</li>
-                            <li className={styles.listItem}><strong>Integrated RAG Chatbot:</strong> Build a chatbot using OpenAI Agents, FastAPI, and Qdrant.</li>
                             <li className={styles.listItem}><strong>Bonus Points (50 each):</strong>
                                 <ul>
                                     <li>Reusable intelligence via Claude Code Subagents.</li>
