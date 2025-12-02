@@ -1,0 +1,239 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+  z-index: 10000;
+  animation: fadeIn 0.3s ease-out;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  z-index: 10001;
+  max-width: 500px;
+  width: 90%;
+  animation: popIn 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.closeButton {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: white;
+  font-size: 28px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  line-height: 1;
+  padding: 0;
+}
+
+.closeButton:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: rotate(90deg);
+}
+
+.content {
+  text-align: center;
+  color: white;
+}
+
+.icon {
+  font-size: 60px;
+  margin-bottom: 20px;
+  animation: bounce 1s infinite;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0 0 15px 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.message {
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0 0 30px 0;
+  opacity: 0.95;
+}
+
+.tryButton {
+  background: white;
+  color: #667eea;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.tryButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.ribbonsLeft,
+.ribbonsRight {
+  position: fixed;
+  top: 0;
+  width: 30%;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 9999;
+  overflow: hidden;
+}
+
+.ribbonsLeft {
+  left: 0;
+}
+
+.ribbonsRight {
+  right: 0;
+}
+
+.ribbon {
+  position: absolute;
+  width: 10px;
+  height: 30px;
+  top: -50px;
+  animation: fall linear forwards;
+  opacity: 0.8;
+  border-radius: 2px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes popIn {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes fall {
+  0% {
+    top: -50px;
+    transform: rotate(0deg);
+  }
+  100% {
+    top: 100vh;
+    transform: rotate(360deg);
+  }
+}
+
+/* Tablet styles */
+@media (max-width: 768px) {
+  .popup {
+    padding: 30px 25px;
+    max-width: 90%;
+  }
+
+  .title {
+    font-size: 26px;
+  }
+
+  .message {
+    font-size: 16px;
+  }
+
+  .icon {
+    font-size: 50px;
+  }
+
+  .ribbonsLeft,
+  .ribbonsRight {
+    width: 25%;
+  }
+
+  .ribbon {
+    width: 8px;
+    height: 25px;
+  }
+}
+
+/* Mobile styles */
+@media (max-width: 480px) {
+  .popup {
+    padding: 25px 20px;
+    max-width: 95%;
+    border-radius: 15px;
+  }
+
+  .title {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  .message {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+
+  .icon {
+    font-size: 45px;
+    margin-bottom: 15px;
+  }
+
+  .closeButton {
+    width: 30px;
+    height: 30px;
+    font-size: 24px;
+  }
+
+  .tryButton {
+    padding: 10px 25px;
+    font-size: 15px;
+  }
+
+  .ribbonsLeft,
+  .ribbonsRight {
+    width: 20%;
+  }
+
+  .ribbon {
+    width: 6px;
+    height: 20px;
+  }
+}
+
