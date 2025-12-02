@@ -1,0 +1,33 @@
+/* src/components/TextSelectionMenu.module.css */
+
+.selectionMenu {
+  position: absolute;
+  background-color: var(--ifm-background-color); /* Docusaurus theme background */
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: var(--ifm-border-radius);
+  box-shadow: var(--ifm-global-shadow-md);
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  z-index: 1000; /* Ensure it's above other content */
+  /* transform: translateX(-50%); /* Centered horizontally relative to its own width */
+  /* Initial position might be off, adjusting via JS style.left/top */
+}
+
+.selectionMenu button {
+  background-color: var(--ifm-button-background-color);
+  color: var(--ifm-button-color);
+  border: 1px solid var(--ifm-button-border-color);
+  border-radius: var(--ifm-button-border-radius);
+  padding: 6px 12px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  white-space: nowrap; /* Prevent buttons from wrapping */
+  text-align: left; /* Align text to the left */
+}
+
+.selectionMenu button:hover {
+  background-color: var(--ifm-button-hover-background-color);
+  color: var(--ifm-button-hover-color);
+}

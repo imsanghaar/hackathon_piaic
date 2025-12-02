@@ -1,0 +1,46 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      # These are placeholders. In a real deployment, these should be injected
+      # as secrets or environment variables by the deployment platform (e.g., Docker Compose, Kubernetes, cloud provider).
+      # Ensure your .env file is NOT committed to Git and is used for local development only.
+      - OPENAI_API_KEY=${OPENAI_API_KEY_PROD:-your_openai_api_key_placeholder}
+      - QDRANT_API_KEY=${QDRANT_API_KEY_PROD:-your_qdrant_api_key_placeholder}
+      - QDRANT_URL=${QDRANT_URL_PROD:-your_qdrant_cloud_url_placeholder}
+      - NEON_POSTGRES_URL=${NEON_POSTGRES_URL_PROD:-your_neon_postgres_url_placeholder}
+    depends_on:
+      # If you were running Qdrant or DB locally in Docker, you would add them here
+      # For example:
+      # - qdrant
+      # - postgres
+    networks:
+      - app-network
+
+# Example services for Qdrant and PostgreSQL if running locally for dev/test:
+# services:
+#   qdrant:
+#     image: qdrant/qdrant:latest
+#     ports: [6333:6333]
+#     networks:
+#       - app-network
+#
+#   postgres:
+#     image: postgres:15-alpine
+#     environment:
+#       POSTGRES_USER: neondb_owner
+#       POSTGRES_PASSWORD: your_postgres_password
+#       POSTGRES_DB: neondb
+#     ports: [5432:5432]
+#     networks:
+#       - app-network
+
+networks:
+  app-network:
+    driver: bridge

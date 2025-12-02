@@ -1,12 +1,16 @@
 import React from 'react';
-import Chatbot from '../components/Chatbot';
+import ChatbaseWidget from '../components/ChatbaseWidget';
+import TextSelectionPopup from '../components/TextSelectionPopup';
+import WelcomePopup from '../components/WelcomePopup';
 
 // Default implementation, that you can customize
 export default function Root({ children }) {
     return (
         <>
             {children}
-            <Chatbot />
+            <ChatbaseWidget />
+            <TextSelectionPopup />
+            <WelcomePopup />
         </>
     );
 }

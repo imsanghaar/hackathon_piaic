@@ -31,7 +31,12 @@
 
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-[Gates determined based on constitution file]
+*   **API-First Development**: Plan must detail FastAPI service structure and API contracts.
+*   **Robust Data Management**: Neon Postgres and Qdrant Cloud integration must be specified.
+*   **Integrated Documentation**: Docusaurus content structure for API specs and design decisions must be planned.
+*   **Hackathon Velocity & MVP Focus**: MVP scope must be clearly defined, and features prioritized (P1, P2, etc.).
+*   **Code Quality & Maintainability**: Conventions for code style, logging, and error handling must be established.
+*   **Security & Compliance**: API key management and data handling strategies must be documented.
 
 ## Project Structure
 
